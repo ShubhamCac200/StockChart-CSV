@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CandleStick CHART</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"
+        integrity="sha512-dfX5uYVXzyU8+KHqj8bjo7UkOdg18PaOtpa48djpNbZHwExddghZ+ZmzWT06R5v6NSk3ZUfsH6FNEDepLx9hPQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="chartMenu">
+        <p>Stock Chart</p>
+        <select id="stockCompany">
+            <option value="WIPRO">WIPRO</option>
+            <option value="COALINDIA">COALINDIA</option>
+            <option value="TCS">TCS</option>
+
+        </select>
+        <button id="btn7Days">7 Days</button>
+        <button id="btn1Month">1 Month</button>
+        <button id="btn1Year">1 Year</button>
+        <button id="btnAllYears">All Years</button>
+    </div>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChart" width="700" height="400"></canvas>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/luxon@1.26.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.1/dist/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-adapter-luxon/0.2.1/chartjs-adapter-luxon.min.js"
+        integrity="sha512-7OAqY8fMTYheWYbBkIFSrme9s5PZSyprCwaE9hJfGkDqpveJytJOMjk8gRNDLHzEijRSzUhAvNcNZrDQr7JyWQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/chartjs-chart-financial@0.1.0/dist/chartjs-chart-financial.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
